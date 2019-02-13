@@ -12,7 +12,6 @@ RUN VERSION=$(cat /tmp/VERSION) && \
     git clone https://github.com/Groestlcoin/groestlcoin-hash-python && \
     cd groestlcoin-hash-python && \
     python setup.py install && \
-    cd && \
     git clone -b $VERSION https://github.com/kyuupichan/electrumx.git && \
     cd electrumx && \
     python setup.py install && \
